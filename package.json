@@ -1,0 +1,12 @@
+{
+  "name": "ehr-system",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "cd client && pnpm dev",
+    "build": "cd client && pnpm build",
+    "start": "cd client && pnpm start",
+    "install": "cd client && pnpm install"
+  },
+  "packageManager": "pnpm@10.11.0"
+} 
