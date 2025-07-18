@@ -34,10 +34,12 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-gray-100">
       <Header />
-      <NavigationTabs activeTab={activeTab} setActiveTab={setActiveTab} />
-      <main className="container mx-auto mt-4">
-        {renderForm()}
-      </main>
+      <div className="flex flex-col border border-gray-300 mt-5 rounded-lg shadow-md bg-white mx-4">
+        <NavigationTabs activeTab={activeTab} setActiveTab={setActiveTab} />
+        <main className="p-2">
+          {renderForm()}
+        </main>
+      </div>
     </div>
   );
 }
