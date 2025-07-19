@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { FlaskConical, NotebookText } from 'lucide-react';
+import { Textarea } from '@/components/ui/textarea';
 import {
   Table,
   TableBody,
@@ -167,6 +168,90 @@ const OrdersForm = () => {
           </TableBody>
         </Table>
       </div>
+
+      {/* Other Procedures Section */}
+      <hr className="border-t border-gray-300 my-4" />
+      <h2 className="text-2xl font-bold mb-4 flex items-center">
+        <NotebookText className="mr-2" /> Other Procedures
+      </h2>
+      <div className="overflow-x-auto">
+        <Table>
+          <TableHeader className="bg-gray-200 font-bold">
+            <TableRow>
+              <TableHead className="font-bold">Procedure Order #</TableHead>
+              <TableHead className="font-bold">CPT code</TableHead>
+              <TableHead className="font-bold">Description</TableHead>
+              <TableHead className="font-bold">Qty</TableHead>
+              <TableHead className="font-bold">Status Changed By</TableHead>
+              <TableHead className="font-bold">Status</TableHead>
+            </TableRow>
+          </TableHeader>
+          <TableBody>
+            {/* No data yet */}
+            <TableRow>
+                <TableCell colSpan={6} className="h-24 text-center">
+                  No procedures.
+                </TableCell>
+              </TableRow>
+          </TableBody>
+        </Table>
+      </div>
+
+      {/* ICD Codes Summary Section */}
+      <hr className="border-t border-gray-300 my-4" />
+      <h2 className="text-2xl font-bold mb-4 flex items-center">
+        <NotebookText className="mr-2" /> ICD Codes Summary
+      </h2>
+      <div className="overflow-x-auto">
+        <Table>
+          <TableHeader className="bg-gray-200 font-bold">
+            <TableRow>
+              <TableHead className="font-bold">ICD Code</TableHead>
+              <TableHead className="font-bold">Description</TableHead>
+              <TableHead className="font-bold">Type</TableHead>
+            </TableRow>
+          </TableHeader>
+          <TableBody>
+            {/* No data yet */}
+            <TableRow>
+                <TableCell colSpan={3} className="h-24 text-center">
+                  No ICD codes.
+                </TableCell>
+              </TableRow>
+          </TableBody>
+        </Table>
+      </div>
+
+      {/* Medications Section */}
+      <hr className="border-t border-gray-300 my-4" />
+      <h2 className="text-2xl font-bold mb-4 flex items-center">
+        <FlaskConical className="mr-2" /> Medications
+      </h2>
+      <div className="overflow-x-auto">
+        <Table>
+          <TableHeader className="bg-gray-200 font-bold">
+            <TableRow>
+              <TableHead className="font-bold">Medication</TableHead>
+              <TableHead className="font-bold">Dosage</TableHead>
+              <TableHead className="font-bold">Frequency</TableHead>
+            </TableRow>
+          </TableHeader>
+          <TableBody>
+            {/* No data yet */}
+            <TableRow>
+                <TableCell colSpan={3} className="h-24 text-center">
+                  No medications.
+                </TableCell>
+              </TableRow>
+          </TableBody>
+        </Table>
+      </div>
+
+      {/* Additional Notes Section */}
+      <hr className="border-t border-gray-300 my-4" />
+      <h2 className="text-2xl font-bold mb-4">Additional Notes</h2>
+      <Textarea placeholder="Type your additional notes here..." className="min-h-[100px]" />
+
     </div>
   );
 };
