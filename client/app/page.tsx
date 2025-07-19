@@ -5,7 +5,6 @@ import NavigationTabs from "./components/NavigationTabs";
 import PatientInformationForm from "./components/forms/PatientInformationForm";
 import VisitDetailsForm from "./components/forms/VisitDetailsForm";
 import VitalsForm from "./components/forms/VitalsForm";
-import TrackerForm from "./components/forms/TrackerForm";
 import ClinicalNotesForm from "./components/forms/ClinicalNotesForm";
 import OrdersForm from "./components/forms/OrdersForm";
 
@@ -20,8 +19,6 @@ export default function Home() {
         return <VisitDetailsForm />;
       case "Vitals":
         return <VitalsForm />;
-      case "Tracker":
-        return <TrackerForm />;
       case "Clinical Notes":
         return <ClinicalNotesForm />;
       case "Orders":

@@ -1,4 +1,5 @@
 import React from 'react';
+import FormPreviewDialog from './FormPreviewDialog';
 
 const Header = () => {
   return (
@@ -11,15 +12,10 @@ const Header = () => {
         <button className="bg-yellow-500 hover:bg-yellow-600 text-white font-bold py-2 px-4 rounded mb-2 sm:mb-0">
           Logo
         </button>
-        <button className="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded mb-2 sm:mb-0">
-          Preview Form
-        </button>
-        <button className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
-          Save
-        </button>
+        <FormPreviewDialog />
       </div>
     </div>
   );
 };
 
-export default Header; 
+export default Header;
